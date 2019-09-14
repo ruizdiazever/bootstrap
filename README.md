@@ -1,2 +1,2 @@
 # Bootstrap
-Bootstrap: learning, practice and test.
+Learning, practice and test.
