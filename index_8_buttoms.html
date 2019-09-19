@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Botones</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
     <!-- Visitar https://getbootstrap.com/docs/4.3/components/buttons/ -->
@@ -48,15 +49,98 @@
 
     <hr>
     <p class="ml-5">TAMAÑOS</p>
-    <button class="btn btn-danger btn-lg m-2">Boton</button>
-    <button class="btn btn-danger btn m-2">Boton</button>
-    <button class="btn btn-danger btn-sm m-2">Boton</button>
+    <button class="btn btn-danger btn-lg m-2">Boton 1</button>
+    <button class="btn btn-danger btn m-2">Boton 2</button>
+    <button class="btn btn-danger btn-sm m-2">Boton 3</button>
     <br>
-    <button class="btn btn-danger btn-block">Boton</button>
+    <button class="btn btn-danger btn-block">Boton 4</button>
+
+    <hr> <!-- Iconos.. hay que traer en el head
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        & despues ir a https://fontawesome.com/icons para traer cualquier icono
+        -->
+    <button class="btn btn-primary btn-lg">
+        <i class="fa fa-instagram"></i> BOTON
+    </button>
+
+    <br>
+    <!-- "active" hace como si el boton estuviera activo -->
+    <button class="btn btn-dark active">Hola 1</button>
+    <!-- "disable" hace como si el boton estuviera desactivo -->
+    <button class="btn btn-dark disabled">Hola 2</button>
+    <button class="btn btn-dark" data-toggle="button">Hola 3</button>
+
+    <hr>
+    <div class="dropdown">
+        <button class="btn btn-primary" data-toggle="dropdown">
+            ELEGIR
+        </button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">UNO</a>
+            <a href="#" class="dropdown-item">DOS</a>
+            <a href="#" class="dropdown-item">TRES</a>
+        </div>
+    </div>
+    <div class="dropdown"><!-- flechita -->
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                ELEGIR
+            </button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">UNO</a>
+                <a href="#" class="dropdown-item">DOS</a>
+                <a href="#" class="dropdown-item">TRES</a>
+            </div>
+    </div>
+
+    <hr>
+    <div class="btn-group"><!-- es para agrupar botones -->
+        <button class="btn btn-primary">
+            Mi boton
+        </button>
+        <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            Toggle Dropdown
+        </button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">UNO</a>
+            <a href="#" class="dropdown-item">DOS</a>
+            <a href="#" class="dropdown-item">TRES</a>
+        </div>
+    </div>
+
+    <hr>
+    <div class="btn-group">
+            <button class="btn btn-danger">IZQUIERDA</button>
+            <button class="btn btn-danger">CENTER</button>
+            <button class="btn btn-danger">DERECHA</button>
+    </div>
+
+    <div class="btn btn-toolbar" role="toolbar">
+        <div class="btn-group mr-2">
+            <button class="btn btn-primary">1</button>
+            <button class="btn btn-primary">2</button>
+            <button class="btn btn-primary">3</button>
+            <button class="btn btn-primary">4</button>
+        </div>
+
+        <div class="btn-group mr-2">
+            <button class="btn btn-primary">5</button>
+            <button class="btn btn-primary">6</button>
+            <button class="btn btn-primary">7</button>
+        </div>
+        <button class="btn btn-primary">7</button>
+    </div>
+
+    <div class="btn-group-vertical">
+            <button class="btn btn-danger">IZQUIERDA</button>
+            <button class="btn btn-danger">CENTER</button>
+            <button class="btn btn-danger">DERECHA</button>
+    </div>
 
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </body>
 </html>
