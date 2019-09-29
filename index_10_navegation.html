@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navegacion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <nav>  etiqueta  es para navegacion -->
+    <!-- <ul>   es una lista desordenada -->
+    <!-- <li>   son items -->
+    <!-- <a>    etiqueta  es para enlace -->
+    <!-- navbar-expand-md   hace que se expanda en tamaño de pantalla medio -->
+    <!-- navbar-light       navegacion color ligero -->
+    <!-- bg-light           backgroud color ligero -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <!-- container      es para que la navegacion quede mas centrada -->
+            <!-- navbar-brand   resalta el elemento de nav -->
+            <a href="#" class="navbar-brand">
+                Valentina
+            </a>
+
+            <div class="navbar-collapse">
+                <!-- navbar-collapse    cuando la pantalla se achica el nav colapsa bien -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- ml-auto        margin-left automatico -->
+                    <!-- navbar-nav     dice que es la navegacion -->
+                    <!-- nav-item       dice que es un item -->
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                Hannah
+            </a>
+
+            <!-- nav-toggler                esto es para agregar el boton toggler -->
+            <!-- data-toggle="collapse"     hace que el toggler colapse el contenido -->
+            <!-- data-target                el elemento que va a colapsar  -->
+            <!-- navbar-toggler-icon        Para agregar un icono especifico  -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#testNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- collapse           en el elemento hace que por defecto este colapsa en una pantala chica -->
+            <!-- navbar-collapse    es para marca que navegaciones van a collapsar junto a ID -->
+            <div class="collapse navbar-collapse" id="testNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                Perro
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#secondNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="secondNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+
+                <!-- Formulario de busqueda -->
+                <!-- form-control   es para agregar un estilo de bordes -->
+                <form class="form-inline">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button type="button" class="btn btn-outline-success">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                Huron
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#secondNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="secondNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+                    <!-- dropdown          es una elemento despegable-->
+                    <li class="nav-item dropdown">
+                        <!-- dropdown toggle  -->
+                        <!-- data-toggle="dropdown"     es para que apareza el icono -->
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Parent item
+                        </a>
+                        <!-- dropdown-menu     decimos que queremos mostrar en el dropdown -->
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
