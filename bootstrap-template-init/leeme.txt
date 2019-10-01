@@ -1,5 +1,0 @@
-1. Instalar Node.js 												https://nodejs.org/en/
-2. cmd o consola, crear un package.json en la carpeta				npm init --yes
-3. Instalar															npm install bootstrap font-awesome jquery popper.js
-4. Instalar herramientas											npm install -D gulp gulp-cli gulp-sass browser-sync
-5. Crear archivo gulpfile.js										CTRL + N
